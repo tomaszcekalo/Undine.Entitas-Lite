@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard20</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/tomaszcekalo/Entitas-Lite</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tomaszcekalo/Entitas-Lite</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>ecs;entity;component;system;entitas</PackageTags>
+  </PropertyGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(Configuration)' == 'Release' ">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(SolutionDir)\Build\Deploy\Entitas-Lite" />
+  </Target>
+</Project>
