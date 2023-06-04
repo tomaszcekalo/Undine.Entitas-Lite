@@ -6,9 +6,9 @@ Console.WriteLine("Hello, World!");
 var container = new EntitasLiteContainer()
 {
 };
-//container.AddSystem(new SpeedSystem());
-//container.AddSystem(new AccelerationSystem());
 container.Init();
+container.AddSystem(new SpeedSystem());
+container.AddSystem(new AccelerationSystem());
 
 var entity = container.CreateNewEntity();
 entity.AddComponent(new PositionComponent());

@@ -25,22 +25,34 @@ namespace Undine.Entitas.Lite
 
         public override void AddSystem<A>(UnifiedSystem<A> system)
         {
-            throw new NotImplementedException();
+            _feature.Add(new EntitasLiteSystem<A>()
+            {
+                System = system
+            });
         }
 
         public override void AddSystem<A, B>(UnifiedSystem<A, B> system)
         {
-            throw new NotImplementedException();
+            _feature.Add(new EntitasLiteSystem<A, B>()
+            {
+                System = system
+            });
         }
 
         public override void AddSystem<A, B, C>(UnifiedSystem<A, B, C> system)
         {
-            throw new NotImplementedException();
+            _feature.Add(new EntitasLiteSystem<A, B, C>()
+            {
+                System = system
+            });
         }
 
         public override void AddSystem<A, B, C, D>(UnifiedSystem<A, B, C, D> system)
         {
-            throw new NotImplementedException();
+            _feature.Add(new EntitasLiteSystem<A, B, C, D>()
+            {
+                System = system
+            });
         }
 
         public override IUnifiedEntity CreateNewEntity()

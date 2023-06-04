@@ -3,10 +3,11 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Undine.Entitas.Lite</RootNamespace>
+    <Description>Undine bindings for Entitas-Lite framework</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Undine.Core" Version="0.0.0.2" />
+    <PackageReference Include="Undine.Core" Version="0.0.0.5" />
   </ItemGroup>
 
   <ItemGroup>
