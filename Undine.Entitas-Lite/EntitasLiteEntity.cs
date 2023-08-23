@@ -6,7 +6,7 @@ using Undine.Core;
 
 namespace Undine.Entitas.Lite
 {
-    internal class EntitasLiteEntity : IUnifiedEntity
+    public class EntitasLiteEntity : IUnifiedEntity
     {
         public Entity Entity { get; }
 
