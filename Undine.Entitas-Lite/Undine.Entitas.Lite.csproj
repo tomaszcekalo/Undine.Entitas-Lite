@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Undine.Entitas.Lite</RootNamespace>
     <Description>Undine bindings for Entitas-Lite framework</Description>
-	  <Version>1.0.1</Version>
+	  <Version>1.0.2</Version>
 	  <PackageTags>ecs, reactive, patterns, ioc, view-separation, xna, game-development, unity, monogame, gamedev, games, ecs, c-sharp, entity-component, entity-framework, entity, entity-component-system, tdd, test-driven-development, performance, design-pattern, paradigmshift, paradigm, design-patterns, game, game-engine, scripts, scripting, data-driven, data, driven, entitas, undine</PackageTags>
 	  <Authors>Tomasz Cekało</Authors>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Undine.Core" Version="0.0.0.6" />
+    <PackageReference Include="Undine.Core" Version="0.0.0.8" />
   </ItemGroup>
 
   <ItemGroup>
